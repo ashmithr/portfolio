@@ -237,29 +237,16 @@ const Portfolio: React.FC = () => {
             <div className="about-text">
               <p>
                 I'm Ashmith Reddy Sama, a passionate B.Tech Computer Science & Engineering (AI/ML) student at PES University, 
-                currently ranked <strong>7th out of 498 students</strong> with an outstanding <strong>🎯 CGPA of 9.54/10</strong>.
+                currently ranked <strong>7th out of 498 students</strong> with a <strong>CGPA of 9.54/10</strong>.
               </p>
               <p>
-                My journey spans from being a Chief Operational Officer at Invisible Mechanics (acquired by Unacademy) 
+                My journey spans from being a <strong> COO at Invisible Mechanics (acquired by Unacademy) </strong>
                 to currently working as a <strong>🏛️ Summer Intern at SlateMate @ IIT Madras</strong>. I've successfully scaled content to 
                 7M+ views, generated ₹1.5L+ revenue, and achieved remarkable milestones including:
               </p>
-              <div className="achievements-highlights">
-                <div className="achievement-item">
-                  🏆 <strong>1st Place in NexGen 2.0 National Hackathon</strong> - Won ₹30,000 prize competing against 160+ teams
-                </div>
-                <div className="achievement-item">
-                  💰 <strong>Academic Merit Scholarship</strong> - Awarded ₹4,50,000+ for academic excellence
-                </div>
-                <div className="achievement-item">
-                  🎓 <strong>IIT Madras Internship</strong> - Selected for prestigious research internship under ₹7L funded project
-                </div>
-                <div className="achievement-item">
-                  🌟 <strong>Top 1% in JPMorgan CFG'25</strong> - Ranked among top performers out of 50,000+ participants
-                </div>
-              </div>
+          
               <p>
-                I'm driven by the challenge of solving complex problems through innovative AI/ML solutions and modern web technologies.
+                Outside of academics, I enjoy exploring the latest trends in AI, contributing to open-source projects, and engaging in hackathons.
               </p>
             </div>
             <div className="about-stats">
