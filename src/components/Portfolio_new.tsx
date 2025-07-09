@@ -4,6 +4,7 @@ import { HeroGeometric } from './ui/shape-landing-hero';
 
 const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     // Intersection Observer for scroll animations and navigation
@@ -25,14 +26,28 @@ const Portfolio: React.FC = () => {
     const elements = document.querySelectorAll('.section, .skill-category, .project-card, .timeline-item');
     elements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
-  }, []);
+    // Close mobile menu when clicking outside
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (!target.closest('.nav-container') && mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [mobileMenuOpen]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setMobileMenuOpen(false); // Close mobile menu when navigating
   };
 
   const skills = {
@@ -135,7 +150,14 @@ const Portfolio: React.FC = () => {
           <div className="nav-logo">
             <span className="logo-text">AR</span>
           </div>
-          <div className="nav-menu">
+          <button 
+            className="mobile-nav-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+          >
+            {mobileMenuOpen ? '✕' : '☰'}
+          </button>
+          <div className={`nav-menu ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <button 
               className={`nav-item ${activeSection === 'home' ? 'active' : ''}`}
               onClick={() => scrollToSection('home')}
