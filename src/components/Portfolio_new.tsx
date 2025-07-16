@@ -58,17 +58,17 @@ const Portfolio: React.FC = () => {
 
   const experiences = [
     {
-      title: "Summer Intern",
+      title: "Machine Learning Intern",
       company: "SlateMate @ IIT Madras",
       period: "June 2025 – Present",
       location: "Chennai, India",
       responsibilities: [
         "Worked on AI-powered ecosystem for parental control, personalized learning, and student safety",
         "Incubated under Nirmaan Cell @ IIT Madras (₹7L Grant)",
-        "Researched competitor School Management Systems using KPI analysis",
-        "Developed MVPs for AI-powered features and iterated based on feedback"
+        "Built a Behavior Prediction Model for students by pipelining different Hugging Face's Open Source Models using a Serverless Inference API and Gemini API"
       ]
     },
+   
     {
       title: "Chief Operational Officer",
       company: "Invisible Mechanics (Acquired by Unacademy)",
@@ -219,7 +219,7 @@ const Portfolio: React.FC = () => {
             Get In Touch
           </button>
           <a 
-            href="/Ashmith_Resume_June2025.pdf" 
+            href="/Ashmith_Resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-secondary"
@@ -236,18 +236,17 @@ const Portfolio: React.FC = () => {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm Ashmith Reddy Sama, a passionate B.Tech Computer Science & Engineering (AI/ML) student at PES University, 
-                currently ranked <strong>7th out of 498 students</strong> with a <strong>CGPA of 9.54/10</strong>.
+               I'm a Computer Science undergraduate at PES University, specializing in Artificial Intelligence & Machine Learning. I enjoy working at the crossroads of technology, creativity, and business strategy, constantly exploring new ways to innovate and solve problems.
               </p>
               <p>
-                My journey spans from being a <strong> COO at Invisible Mechanics (acquired by Unacademy) </strong>
-                to currently working as a <strong>🏛️ Summer Intern at SlateMate @ IIT Madras</strong>. I've successfully scaled content to 
-                7M+ views, generated ₹1.5L+ revenue, and achieved remarkable milestones including:
+                🌟 My journey spans from being a <strong> COO at Invisible Mechanics x Unacademy </strong>
+                to currently working as a <strong> ML Intern at SlateMate, IIT Madras</strong>
               </p>
           
               <p>
-                Outside of academics, I enjoy exploring the latest trends in AI, contributing to open-source projects, and engaging in hackathons.
+                👨‍💻 Outside of academics, I enjoy exploring the latest trends in AI, contributing to open-source projects, and engaging in hackathons.
               </p>
+              <p>🎹 Outside of tech, I'm also a music producer, with my tracks amassing 200K+ streams on Spotify and thousands of views on YouTube.</p>
             </div>
             <div className="about-stats">
               <div className="stat-item">
@@ -261,6 +260,10 @@ const Portfolio: React.FC = () => {
               <div className="stat-item">
                 <h3>🏛️ IIT Madras</h3>
                 <p>Machine Learning Intern @ Nirmaan, IITM</p>
+              </div>
+              <div className="stat-item">
+                <h3>📈 Top 1% out of 50,000 Applicants</h3>
+                <p>JPMorganChase Code for Good 2025 </p>
               </div>
             </div>
           </div>
