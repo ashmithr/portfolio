@@ -69,7 +69,7 @@ const Portfolio: React.FC = () => {
     {
       title: "Machine Learning Intern",
       company: "Nirmaan @ IIT Madras",
-      period: "June 2025 – Present",
+      period: "June 2025 – July 2025",
       location: "Chennai, India",
       responsibilities: [
         "Built a Behavior Prediction Model for students by pipelining different Hugging Face Open Source Models using a Serverless Inference API and Gemini API under a project called SlateMate"
@@ -256,7 +256,7 @@ const Portfolio: React.FC = () => {
               </p>
               <p>
                 🌟 I'm thrilled to be joining <strong>Goldman Sachs</strong> as a <strong>Summer Analyst in Engineering Division</strong> in Summer 2026! 
-                My journey spans from being <strong>COO at Invisible Mechanics x Unacademy</strong> to currently working as 
+                My journey spans from being <strong>COO at Invisible Mechanics x Unacademy</strong> to working as 
                 <strong> Machine Learning Intern at Nirmaan @ IIT Madras</strong>, where I built behavior prediction models using Hugging Face and Gemini API.
               </p>
               <p>
