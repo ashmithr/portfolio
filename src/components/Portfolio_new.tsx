@@ -51,33 +51,46 @@ const Portfolio: React.FC = () => {
   };
 
   const skills = {
-    languages: ['Python', 'C/C++', 'SQL', 'HTML/CSS', 'JavaScript'],
-    technologies: ['ReactJS', 'ExpressJS', 'NextJS', 'MongoDB', 'Supabase', 'Git', 'Google Colab'],
-    frameworks: ['TensorFlow', 'Keras', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn']
+    languages: ['Python', 'C', 'SQL', 'HTML/CSS', 'JavaScript'],
+    technologies: ['ReactJS', 'ExpressJS', 'NextJS', 'MongoDB', 'Supabase', 'Git', 'Hugging Face Models'],
+    frameworks: ['PyTorch', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn']
   };
 
   const experiences = [
     {
+      title: "Summer Analyst",
+      company: "Goldman Sachs",
+      period: "June 2026 – July 2026",
+      location: "Bengaluru, India",
+      responsibilities: [
+        "Upcoming Summer Analyst in the Engineering Division of Goldman Sachs"
+      ]
+    },
+    {
       title: "Machine Learning Intern",
-      company: "SlateMate @ IIT Madras",
+      company: "Nirmaan @ IIT Madras",
       period: "June 2025 – Present",
       location: "Chennai, India",
       responsibilities: [
-        "Worked on AI-powered ecosystem for parental control, personalized learning, and student safety",
-        "Incubated under Nirmaan Cell @ IIT Madras (₹7L Grant)",
-        "Built a Behavior Prediction Model for students by pipelining different Hugging Face's Open Source Models using a Serverless Inference API and Gemini API"
+        "Built a Behavior Prediction Model for students by pipelining different Hugging Face Open Source Models using a Serverless Inference API and Gemini API under a project called SlateMate"
       ]
     },
-   
     {
       title: "Chief Operational Officer",
-      company: "Invisible Mechanics (Acquired by Unacademy)",
+      company: "Invisible Mechanics x Unacademy",
       period: "August 2023 – Jan 2025",
       location: "Bengaluru, India",
       responsibilities: [
-        "Led end-to-end content pipeline using ML for predictive SEO",
-        "Generated ₹1.5L+ revenue via LMS-integrated e-learning funnels",
-        "Scaled content to 7M+ views and 85K+ subscribers via analytics"
+        "Created Data Models to Scale to 7,000,000+ views, 85,000+ subscribers & ₹150,000 Revenue"
+      ]
+    },
+    {
+      title: "Teaching Assistant for DSA",
+      company: "CSE Department @ PES University",
+      period: "Aug 2025 – Present",
+      location: "Bengaluru, India",
+      responsibilities: [
+        "Developed and refined course content and designed coding challenges on HackerRank to enhance student learning and improve assessment effectiveness"
       ]
     },
     {
@@ -86,22 +99,28 @@ const Portfolio: React.FC = () => {
       period: "June 2024 – July 2024",
       location: "Bengaluru, India",
       responsibilities: [
-        "Designed AI curricula using advanced ML techniques and tools"
+        "Designed and developed state-of-the-art curricula for AI courses, integrating advanced machine learning techniques and frameworks required for the same"
       ]
     }
   ];
 
   const projects = [
     {
+      name: "RenuKiran Impact Bridge",
+      description: "Developed a scalable NGO platform with dashboards, donation traceability, and verified impact metrics (Built for JPMorgan CFG'25)",
+      tech: ["ReactJS", "ExpressJS", "MongoDB", "Node.js"],
+      github: "https://github.com/ashmithr/RenuKiran-Impact-Bridge"
+    },
+    {
       name: "Col(lab) Research",
-      description: "Developed a collaborative research tool with AI-mentored annotations for national hackathon",
+      description: "Led a team of 4 to win a national hackathon with a collaborative tool for real-time, AI-mentored research",
       tech: ["ReactJS", "NextJS", "Supabase", "Google GenAI SDK"],
       github: "https://github.com/ashmithr/ColResearch"
     },
     {
       name: "Movie Buff",
-      description: "Built a TF-IDF based movie recommendation engine with OMDb API for UI enhancement",
-      tech: ["Python", "Streamlit"],
+      description: "Developed a cosine similarity based Recommendation System using a TF-IDF Matrix of Movie Data",
+      tech: ["Python", "NumPy", "Pandas", "Streamlit"],
       github: "https://github.com/ashmithr/Movie-Buff"
     }
   ];
@@ -118,18 +137,14 @@ const Portfolio: React.FC = () => {
         "Data Structures & Algorithms",
         "Web Technologies", 
         "Computer Networks",
-        "Digital Design & Computer Organization",
         "Operating Systems",
-        "Statistics",
-        "Linear Algebra",
-        "Automata",
-        "Python",
-        "C Language"
+        "Database Management Systems",
+        "Machine Learning"
       ],
       awards: [
         "Academic Merit Scholarship (₹4,50,000+)",
-        "1st Place in NexGen 2.0 National Hackathon (160+ teams)",
-        "Top 1% (out of 50,000+) in JPMorgan CFG'25"
+        "Selected for JPMorgan Code for Good'25 (Top 1% out of 50,000+ Applicants)",
+        "1st Place in NexGen 2.0 National Hackathon (160+ teams) - ₹30,000 Cash Prize"
       ]
     },
     {
@@ -236,34 +251,44 @@ const Portfolio: React.FC = () => {
           <div className="about-content">
             <div className="about-text">
               <p>
-               I'm a Computer Science undergraduate at PES University, specializing in Artificial Intelligence & Machine Learning. I enjoy working at the crossroads of technology, creativity, and business strategy, constantly exploring new ways to innovate and solve problems.
+                I'm Ashmith Reddy Sama, a passionate B.Tech Computer Science & Engineering (AI/ML) student at PES University, 
+                currently ranked <strong>7th out of 498 students</strong> with an outstanding <strong>CGPA of 9.54/10</strong>.
               </p>
               <p>
-                🌟 My journey spans from being a <strong> COO at Invisible Mechanics x Unacademy </strong>
-                to currently working as a <strong> ML Intern at SlateMate, IIT Madras</strong>
+                🌟 I'm thrilled to be joining <strong>Goldman Sachs</strong> as a <strong>Summer Analyst in Engineering Division</strong> in Summer 2026! 
+                My journey spans from being <strong>COO at Invisible Mechanics x Unacademy</strong> to currently working as 
+                <strong> Machine Learning Intern at Nirmaan @ IIT Madras</strong>, where I built behavior prediction models using Hugging Face and Gemini API.
               </p>
-          
               <p>
-                👨‍💻 Outside of academics, I enjoy exploring the latest trends in AI, contributing to open-source projects, and engaging in hackathons.
+                🏆 I'm proud to have been <strong>selected for JPMorgan Code for Good'25 (Top 1% out of 50,000+ applicants)</strong> and 
+                won <strong>1st Place in NexGen 2.0 National Hackathon</strong> (₹30,000 prize). I've scaled content to 7M+ views, 
+                generated ₹150,000+ revenue, and received an <strong>Academic Merit Scholarship worth ₹4,50,000+</strong>.
               </p>
-              <p>🎹 Outside of tech, I'm also a music producer, with my tracks amassing 200K+ streams on Spotify and thousands of views on YouTube.</p>
+              <p>
+                👨‍💻 I also serve as a <strong>Teaching Assistant for Data Structures & Algorithms</strong> at PES University, 
+                helping shape the next generation of computer scientists.
+              </p>
             </div>
             <div className="about-stats">
               <div className="stat-item">
-                <h3>🎯 9.54 CGPA</h3>
-                <p>₹4,50,000+ Scholarship</p>
+                <h3>💼 Goldman Sachs</h3>
+                <p>Summer Analyst 2026 (Engineering Division)</p>
               </div>
               <div className="stat-item">
-                <h3>🏆 1st Place </h3>
-                <p>NexGen 2.0 National Level Hackathon</p>
+                <h3>🎯 9.54 CGPA</h3>
+                <p>Ranked 7th/498 • ₹4,50,000+ Scholarship</p>
+              </div>
+              <div className="stat-item">
+                <h3>🏆 1st Place</h3>
+                <p>NexGen 2.0 National Hackathon (₹30,000)</p>
               </div>
               <div className="stat-item">
                 <h3>🏛️ IIT Madras</h3>
-                <p>Machine Learning Intern @ Nirmaan, IITM</p>
+                <p>Machine Learning Intern @ Nirmaan</p>
               </div>
               <div className="stat-item">
-                <h3>📈 Top 1% out of 50,000 Applicants</h3>
-                <p>JPMorganChase Code for Good 2025 </p>
+                <h3>📈 Top 1%</h3>
+                <p>JPMorgan CFG'25 (50,000+ Applicants)</p>
               </div>
             </div>
           </div>
