@@ -440,10 +440,6 @@ const Portfolio: React.FC = () => {
                 <span>ashmithreddys@gmail.com</span>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">📱</span>
-                <span>+91-7829930199</span>
-              </div>
-              <div className="contact-item">
                 <span className="contact-icon">📍</span>
                 <span>Bengaluru, India</span>
               </div>
